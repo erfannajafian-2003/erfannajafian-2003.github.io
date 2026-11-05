@@ -464,3 +464,83 @@ body {
         font-size: 12px;
     }
 }
+
+/* =====================================
+   PUBLICATIONS & RESEARCH PROJECTS
+===================================== */
+
+.publication-empty {
+    background: #f5f7fa;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--blue);
+    padding: 30px;
+    max-width: 850px;
+}
+
+.publication-empty h3 {
+    color: var(--navy);
+    font-size: 22px;
+    font-weight: normal;
+    margin: 12px 0;
+}
+
+.publication-empty p {
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.subsection-title {
+    margin-top: 65px;
+    font-size: 29px !important;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.project-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--navy);
+    padding: 30px;
+    transition: 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(16, 36, 62, 0.07);
+}
+
+.project-card h3 {
+    color: var(--navy);
+    font-size: 21px;
+    font-weight: normal;
+    margin: 12px 0;
+    line-height: 1.5;
+}
+
+.project-institution {
+    color: var(--blue);
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.project-card p:not(.project-institution) {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.project-tag {
+    display: inline-block;
+    margin: 16px 7px 0 0;
+    padding: 5px 12px;
+    background: #edf2f8;
+    color: var(--navy-light);
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+
