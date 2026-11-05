@@ -1,1 +1,183 @@
+/* =================================
+   ERFAN NAJAFIAN
+   Academic Personal Website
+================================= */
 
+:root {
+    --navy: #14243b;
+    --blue: #315b82;
+    --text: #283445;
+    --muted: #6b7788;
+    --background: #ffffff;
+    --line: #e5eaf0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.8;
+}
+
+/* Navigation */
+
+header {
+    border-bottom: 1px solid var(--line);
+    padding: 22px 8%;
+}
+
+nav {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    color: var(--navy);
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: var(--blue);
+}
+
+/* Main */
+
+.container {
+    max-width: 1050px;
+    margin: auto;
+    padding: 75px 25px;
+}
+
+.hero {
+    padding: 70px 0 55px;
+    border-bottom: 1px solid var(--line);
+}
+
+.hero h1 {
+    font-size: clamp(36px, 6vw, 54px);
+    color: var(--navy);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-family: Arial, sans-serif;
+    color: var(--blue);
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.intro {
+    max-width: 760px;
+    font-size: 17px;
+}
+
+/* Sections */
+
+section {
+    padding: 42px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+section h2 {
+    font-size: 27px;
+    color: var(--navy);
+    margin-bottom: 18px;
+}
+
+section p {
+    max-width: 800px;
+}
+
+.interests {
+    padding-left: 22px;
+}
+
+.interests li {
+    margin-bottom: 7px;
+}
+
+/* Links */
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: var(--blue);
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    color: var(--muted);
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .container {
+        padding: 45px 22px;
+    }
+
+    .hero {
+        padding-top: 45px;
+    }
+}
