@@ -544,3 +544,31 @@ body {
     font-size: 11px;
 }
 
+/* INNER PAGES */
+
+.section {
+    background: linear-gradient(
+        120deg,
+        #f5f8fc 0%,
+        #ffffff 65%,
+        #edf3f9 100%
+    );
+    min-height: 75vh;
+    padding: 90px 0;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: 35px auto 0;
+    padding: 35px;
+    background: #ffffff;
+    border: 1px solid #e3e9f0;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(16, 36, 62, 0.05);
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+
