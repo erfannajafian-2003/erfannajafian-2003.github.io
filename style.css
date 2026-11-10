@@ -588,3 +588,16 @@ body {
     display: block;
 }
 
+.footer {
+    background: #10243e;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px 15px;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    text-align: center;
+}
+
